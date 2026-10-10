@@ -4,5 +4,11 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  root: 'src',
   base: '/pokedex/',
+  publicDir: '../public',
+  build: {
+    outDir: '../dist',
+    emptyOutDir: true,
+  },
 })
